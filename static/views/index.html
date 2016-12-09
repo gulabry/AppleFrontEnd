@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>TestFlight Stored Jobs & Tests</title>
+</head>
+
+<body>
+<div class="container">
+	<h1 class="text-center">TestFlight Tests & Results</h1>
+
+	<!-- forms -->
+	<div class="container">
+		<div class="row">
+			<!-- person form -->
+			<div id="PersonForm" style="margin-top:10px"
+				 class="mainbox col-md-6">
+				 <h1>Add Device 				 <button id="btn-showAllPersons" type="submit" class="btn btn-success"><i class="icon-hand-right">
+				</i>Show All</button></h1>
+
+				<div class="panel panel-info">
+					<div class="panel-body">
+						<form id="form" class="form-horizontal" role="form" action="/createPerson" method="post">
+							<div class="form-group">
+								<label for="PersonFname" class="col-md-3 control-label">Name</label>
+								<div class="col-md-9">
+									<input type="text" id="PersonFname" class="form-control" name="PersonFname"
+										   placeholder="ex: Bryan's iPad">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="PersonLname" class="col-md-3 control-label">Type</label>
+								<div class="col-md-9">
+									<input type="text" id="PersonLname" class="form-control" name="PersonLname"
+										   placeholder="ex: iPhone 6, iPad Pro">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="PersonDOB" class="col-md-3 control-label">Description</label>
+								<div class="col-md-9">
+									<input type="date" id="PersonDOB" class="form-control" name="PersonDOB">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-offset-6 col-md-12">
+									<button id="btn-PersonsSubmit" type="submit" class="btn btn-primary">
+										<i class="icon-hand-right"></i>Add</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- events form -->
+			<div id="EventForm" style="margin-top:10px"
+				 class="mainbox col-md-6">
+				 <h1>Lookup Results 				<button id="btn-showAllEvents" type="submit" class="btn btn-danger"><i class="icon-hand-right">
+				</i>Show Recent Tests</button></h1>
+				<!-- <div class="panel panel-info">
+					<div class="panel-body">
+						<form id="form" class="form-horizontal" role="form" action="/createEvent" method="post">
+							<div class="form-group">
+								<label for="EventType" class="col-md-3 control-label">Test ID</label>
+								<div class="col-md-9">
+									<input type="text" id="EventType" class="form-control" name="EventType"
+										   placeholder="ex: 123456">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="Quantity" class="col-md-3 control-label">Name</label>
+								<div class="col-md-9">
+									<input type="text" id="Quantity" class="form-control" name="Quantity"
+										   placeholder="ex: Get App Name">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-offset-6 col-md-12">
+									<button id="btn-showOneEvent" type="submit" class="btn btn-primary">
+										<i class="icon-hand-right"></i>Lookup</button>
+								</div>
+							</div>
+						</form>
+					</div -->
+				</div>
+			</div>
+	</div><!-- end container -->
+	<!-- results table -->
+	<div class="container">
+		<table class="table table-striped">
+			<thead>
+				<tr id="tablehead">
+
+				</tr>
+			</thead>
+			<tbody id="resultsTable">
+			</tbody>
+		</table>
+	</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="/js/persons.js"></script>
+	<script src="/js/drinks.js"></script>
+	<script src="/js/events.js"></script>
+</div>
+</body>
+
+</html>

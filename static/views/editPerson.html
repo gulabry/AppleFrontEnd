@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Edit Person</title>
+</head>
+
+<body>
+	<div id="PersonForm" style="margin-top:50px"
+		 class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<div class="panel panel-info">
+			<div class="panel-body">
+				<form id="form" class="form-horizontal" role="form" action="/PersonSubmit" method="post">
+					<input id="PersonID" type="hidden" class="form-control" name="PersonID" value="">
+					<div class="form-group">
+						<label for="PersonFname" class="col-md-3 control-label">Name</label>
+						<div class="col-md-9">
+							<input id="PersonFname" type="text" class="form-control" name="PersonFname"
+								   placeholder="Your first name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="PersonLname" class="col-md-3 control-label">Device ID</label>
+						<div class="col-md-9">
+							<input id="PersonLname" type="text" class="form-control" name="PersonLname"
+								   placeholder="Your last name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="PersonDOB" class="col-md-3 control-label">Type ID</label>
+						<div class="col-md-9">
+							<input id="PersonDOB" type="date" class="form-control"
+								   name="PersonDOB">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="PersonDOB" class="col-md-3 control-label">Description</label>
+						<div class="col-md-9">
+							<input id="PersonDOB" type="date" class="form-control"
+								   name="PersonDOB">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-offset-1 col-md-12">
+							<button id="btn-PersonsSubmit" type="submit" class="btn btn-info">
+								<i class="icon-hand-right"></i>Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="/js/editPerson.js"></script>
+</body>
+
+</html>
